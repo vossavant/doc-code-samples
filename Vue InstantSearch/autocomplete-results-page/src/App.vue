@@ -24,9 +24,9 @@
             <vue-autosuggest
               :suggestions="indicesToSuggestions(indices)"
               @selected="onSelect"
+              @input="refine"
               :input-props="{
                 style: 'width: 100%',
-                onInputChange: refine,
                 placeholder: 'Search here…',
               }"
             >
